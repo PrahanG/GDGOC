@@ -7,7 +7,7 @@ export const eventsData: Event[] = [
     description: "🚀 Welcome to GDGoC GRIET's APIDEATHON—an exciting ideathon where teams of 2–4 innovate real-world solutions across domains like health, sustainability, and education by creatively leveraging Google technologies and APIs!",
     date: "Apr 26, 2025",
     images: [
-    "/event3/img1.webp","/event3/img2.webp","/event3/img3.webp","/event3/img4.webp"
+    "/event4/IMG_0986.JPG","/event4/IMG_1002.JPG","/event4/IMG_1058.JPG","/event4/IMG_1065.JPG","/event4/IMG_1083.JPG","/event4/IMG_1088.JPG","/event4/IMG_1161.JPG"
     ],
     tags: ["Build with AI","Google Technologies","Innovation","Accessibility","Sustainability","Community Building"],
     color: "blue"
