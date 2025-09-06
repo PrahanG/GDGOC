@@ -40,7 +40,7 @@ const Team = () => {
 
           <TeamMember
             name="Gowthami Neelapu"
-            role="Chapter Co-organizer"
+            role="Executive Lead"
             image="/GDG Leads/gowthami.jpg"
             linkedin="https://www.linkedin.com/in/gowthami-n-805208303/"
           />

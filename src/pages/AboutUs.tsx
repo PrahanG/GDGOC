@@ -6,7 +6,7 @@ const AboutUs = () => {
     initial: { opacity: 0 },
     animate: {
       opacity: 1,
-      transition: { duration: 0.5, delayChildren: 0.3, staggerChildren: 0.1 },
+      transition: { duration: 0.5, delayChildren: 0.3, staggerChildren: 0.15 },
     },
   };
 
@@ -29,7 +29,7 @@ const AboutUs = () => {
   };
 
   return (
-    <div className="min-h-screen relative overflow-hidden bg-gray-50">
+    <div className="min-h-screen relative overflow-hidden bg-gradient-to-b from-gray-50 to-gray-100">
       <Navbar />
 
       <motion.main
@@ -38,52 +38,73 @@ const AboutUs = () => {
         initial="initial"
         animate="animate"
       >
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="max-w-5xl mx-auto px-6 sm:px-8 lg:px-12 py-16">
           <motion.h1
-            className="text-4xl font-bold text-center mb-8 text-gray-800"
+            className="text-5xl md:text-6xl font-extrabold text-center mb-12 text-gray-900 tracking-tight"
             variants={headingVariants}
           >
             About GDG on Campus
           </motion.h1>
 
-          <div className="transition transform hover:scale-105 hover:border-blue-500 hover:shadow-lg hover:shadow-blue-400/40 border border-gray-300 rounded-lg duration-300 ease-in-out">
+          <div className="space-y-10">
+            {/* Card 1 */}
             <motion.div
-              className="bg-white rounded-lg p-8"
+              className="bg-white shadow-lg rounded-2xl p-10 hover:scale-105 transition-transform duration-300 ease-in-out border border-gray-200"
               variants={paragraphVariants}
             >
-              <motion.p
-                className="mb-6 text-lg text-gray-700"
-                variants={paragraphVariants}
-              >
-                <strong>Google Developer Groups (GDG) on Campus</strong> are student-led communities that aim to empower university students with the latest Google technologies. They provide hands-on learning experiences, mentorship, and opportunities to collaborate on real-world projects.
-              </motion.p>
+              <p className="mb-4 text-lg md:text-xl text-gray-700 leading-relaxed">
+                <strong>Google Developer Groups (GDG) on Campus</strong> are
+                student-led communities designed to empower university students
+                with the latest Google technologies. They offer hands-on
+                learning experiences, mentorship, and opportunities to
+                collaborate on real-world projects.
+              </p>
+            </motion.div>
 
-              <motion.p
-                className="mb-6 text-lg text-gray-700"
-                variants={paragraphVariants}
-              >
-                Members of GDG on Campus engage in workshops, hackathons, tech talks, and coding competitions. These activities help students build technical skills, explore emerging technologies like AI, Cloud, and Web Development, and gain practical experience beyond classroom learning.
-              </motion.p>
+            {/* Card 2 */}
+            <motion.div
+              className="bg-white shadow-lg rounded-2xl p-10 hover:scale-105 transition-transform duration-300 ease-in-out border border-gray-200"
+              variants={paragraphVariants}
+            >
+              <p className="mb-4 text-lg md:text-xl text-gray-700 leading-relaxed">
+                Members of GDG on Campus participate in workshops, hackathons,
+                tech talks, and coding competitions. These activities help
+                students build technical skills, explore emerging technologies
+                like AI, Cloud, and Web Development, and gain practical
+                experience beyond classroom learning.
+              </p>
+            </motion.div>
 
-              <motion.p
-                className="mb-6 text-lg text-gray-700"
-                variants={paragraphVariants}
-              >
-                GDG on Campus also connects students to the global GDG network, providing access to a wide community of developers, industry mentors, and Google experts. This fosters collaboration, networking, and knowledge sharing on a global scale.
-              </motion.p>
+            {/* Card 3 */}
+            <motion.div
+              className="bg-white shadow-lg rounded-2xl p-10 hover:scale-105 transition-transform duration-300 ease-in-out border border-gray-200"
+              variants={paragraphVariants}
+            >
+              <p className="mb-4 text-lg md:text-xl text-gray-700 leading-relaxed">
+                GDG on Campus connects students to the global GDG network,
+                providing access to a worldwide community of developers,
+                mentors, and Google experts. This fosters collaboration,
+                networking, and knowledge sharing on a global scale.
+              </p>
+            </motion.div>
 
-              <motion.p
-                className="text-lg text-gray-700"
-                variants={paragraphVariants}
-              >
-                By participating in GDG on Campus activities, students enhance their technical expertise, develop leadership skills, and prepare for successful careers in technology while contributing to the broader developer ecosystem.
-              </motion.p>
+            {/* Card 4 */}
+            <motion.div
+              className="bg-white shadow-lg rounded-2xl p-10 hover:scale-105 transition-transform duration-300 ease-in-out border border-gray-200"
+              variants={paragraphVariants}
+            >
+              <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+                By participating in GDG on Campus activities, students enhance
+                technical expertise, develop leadership skills, and prepare for
+                successful careers in technology, while contributing to the
+                broader developer ecosystem.
+              </p>
             </motion.div>
           </div>
         </div>
       </motion.main>
 
-      <footer className="relative z-10 bg-white py-6 text-center text-gray-500 text-sm">
+      <footer className="relative z-10 bg-white py-6 text-center text-gray-500 text-sm mt-12">
         <p>© 2025 GDG on Campus. All rights reserved.</p>
       </footer>
     </div>

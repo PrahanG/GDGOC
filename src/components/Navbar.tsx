@@ -10,13 +10,15 @@ const Navbar = () => {
       
       {/* Logo */}
       <div className="flex items-center">
-        <div className="h-20 w-20 md:h-20 md:w-20">
-          <img
-            src="/GDG23_IG_Sticker_01_v01.gif"
-            alt="GDG Sticker Brackets"
-            className="h-full w-full object-contain"
-          />
-        </div>
+<div className="h-10 w-100 md:h-20 md:w-80">
+  <img
+    src="public/logo.jpg"
+    alt="GDG Sticker Brackets"
+    className="h-full w-60 object-contain"  
+  />
+</div>
+
+
       </div>
 
       {/* Centered Desktop Links */}

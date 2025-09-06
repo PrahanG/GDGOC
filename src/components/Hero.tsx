@@ -1,6 +1,4 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-
 const techTerms = ["AI", "ML", "Blockchain", "IoT", "Cloud", "AR/VR"];
 
 const Hero = () => {
