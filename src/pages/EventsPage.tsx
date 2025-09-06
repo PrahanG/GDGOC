@@ -9,6 +9,9 @@ const EventsPage = () => {
     <div className="min-h-screen bg-gray-50 relative overflow-hidden">
       <SnowfallEffect />
       <Navbar />
+      <br />
+      <br />
+      <br />
       <main>
       <EventsComponent events={eventsData} />
       </main>

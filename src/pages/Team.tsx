@@ -4,7 +4,10 @@ import Navbar from "@/components/Navbar";
 const Team = () => {
   return (
     <div className="min-h-screen bg-white text-gray-900 font-inter">
+      
       <Navbar />
+      <br />
+      <br />
       <main className="max-w-7xl mx-auto px-6 lg:px-12 py-20">
         {/* Intro Section */}
         <div className="text-center mb-12">
@@ -17,81 +20,103 @@ const Team = () => {
           </p>
         </div>
 
+                {/* Tech Team */}
+        <Section title="Faculty Coordinator">
+          <TeamMember
+            name="Dr. P. Sanjeeva"
+            role="GDGoC GRIET Coordinator"
+            image="/GDG Leads/sanjeeva.jpg"
+            linkedin="#"
+          />
+        </Section>
         {/* Admin Team */}
         <Section title="Admin Team">
           <TeamMember
             name="Naina Thippani"
             role="Chapter Organizer"
-            image="https://i.pravatar.cc/300?img=9"
+            image="/GDG Leads/naina.jpg"
+            linkedin="https://www.linkedin.com/in/naina-thippani-99a095299/"
+          />
+
+          <TeamMember
+            name="Gowthami Neelapu"
+            role="Chapter Co-organizer"
+            image="/GDG Leads/gowthami.jpg"
+            linkedin="https://www.linkedin.com/in/gowthami-n-805208303/"
+          />
+          <TeamMember
+            name="Prahan Gundala"
+            role="Technical Lead"
+            image="/GDG Leads/prahan.jpg"
+            linkedin="https://www.linkedin.com/in/prahan-gundala/"
+          />
+          <TeamMember
+            name="Sumith Chandra Nuka"
+            role="Technical Co-lead"
+            image="/GDG Leads/Sumith.jpg"
+            linkedin="https://www.linkedin.com/in/sumith-chandra-nuka/"
+          />
+          <TeamMember
+            name="Sunaina Kancharla"
+            role="Non-Technical Lead"
+            image="/GDG Leads/Sunaina.jpg"
             linkedin="#"
           />
           <TeamMember
-            name="Gouthami"
-            role="Chapter Co-organizer"
-            image="https://i.pravatar.cc/300?img=9"
-            linkedin="#"
+            name="Joshika Andhavarapu"
+            role="Non-Technical Co-lead"
+            image="/GDG Leads/Joshika.jpg"
+            linkedin="https://www.linkedin.com/in/andhavarapu-joshika-6971a1311/"
           />
         </Section>
 
-        {/* Non-Tech Team */}
-        <Section title="Non-Tech Team">
-          <TeamMember
-            name="Mahathi"
-            role="Design Lead"
-            image="https://i.pravatar.cc/300?img=9"
-            linkedin="#"
-          />
-          <TeamMember
-            name="Lokesh"
-            role="Marketing"
-            image="https://i.pravatar.cc/300?img=11"
-            linkedin="#"
-          />
-          <TeamMember
-            name="Rahul"
-            role="Social Media"
-            image="https://i.pravatar.cc/300?img=11"
-            linkedin="#"
-          />
-          <TeamMember
-            name="Adarsh"
-            role="Event Management"
-            image="https://i.pravatar.cc/300?img=12"
-            linkedin="#"
-          />
-          <TeamMember
-            name="Sriram"
-            role="Logistics Lead"
-            image="https://i.pravatar.cc/300?img=13"
-            linkedin="#"
-          />
-        </Section>
 
         {/* Tech Team */}
         <Section title="Tech Team">
           <TeamMember
-            name="Prahan Gundala"
-            role="Technical Lead"
-            image="https://i.pravatar.cc/300?img=14"
-            linkedin="#"
-          />
-          <TeamMember
-            name="Sumith"
-            role="Technical Co-lead"
-            image="https://i.pravatar.cc/300?img=15"
-            linkedin="#"
-          />
-          <TeamMember
-            name="Poojith"
+            name="Poojith Jasti"
             role="AI/ML Lead"
-            image="https://i.pravatar.cc/300?img=16"
+            image="/GDG Leads/poojith.jpg"
+            linkedin="https://www.linkedin.com/in/jasti-poojith-sai-b03423283/"
+          />
+          <TeamMember
+            name="Pavan Sai Teja Ganapavarapu "
+            role="Full Stack Lead"
+            image="/GDG Leads/PavanSaiTeja.jpg"
+            linkedin="https://www.linkedin.com/in/pavansaiteja/"
+          />
+        </Section>
+        {/* Non-Tech Team */}
+        <Section title="Non-Tech Team">
+          <TeamMember
+            name="Mahathi Mahasiv"
+            role="Design Lead"
+            image="/GDG Leads/mahati.jpg"
+            linkedin="https://www.linkedin.com/in/mahathi-mahasiv-bb7a8830a/"
+          />
+          <TeamMember
+            name="Lokesh"
+            role="Marketing"
+            image="/GDG Leads/lokesh.jpg"
             linkedin="#"
           />
           <TeamMember
-            name="Pavan"
-            role="Full Stack Lead"
-            image="https://i.pravatar.cc/300?img=11"
-            linkedin="#"
+            name="Rahul Padala"
+            role="Social Media"
+            image="/GDG Leads/Rahul.jpg"
+            linkedin="https://www.linkedin.com/in/padala-rahul-13b28b299/"
+          />
+          <TeamMember
+            name="Adarsh Kumar Singh"
+            role="Event Management"
+            image="/GDG Leads/adarsh.jpg"
+            linkedin="https://www.linkedin.com/in/adarsh-kumar-singh-4b042b28a/"
+          />
+          <TeamMember
+            name="Sriram Rishvith Paladugu"
+            role="Logistics Lead"
+            image="/GDG Leads/sriram.jpg"
+            linkedin="https://www.linkedin.com/in/sriram-rishvith-paladugu-ba507b332/"
           />
         </Section>
       </main>

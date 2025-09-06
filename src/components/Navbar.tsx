@@ -1,49 +1,53 @@
-
 import { cn } from "@/lib/utils";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <nav className="fixed top-0 left-0 w-full py-4 px-8 bg-white shadow-sm flex justify-between items-center z-50">
-
-      <div className="flex items-center">
-        {/* Logo */}
-        <div className="flex items-center">
-  {/* Logo */}
-  <div className="h-12 w-12">
-<img
-  src="/GDG-Sticker-Brackets.gif"
-  alt="GDG Sticker Brackets"
-  className="h-100 object-contain"
-/>
-
-
-  </div>
-</div>
-
-</div>
+    <nav className="fixed top-0 left-0 w-full py-2 px-6 bg-white shadow-sm flex justify-between items-center z-50 font-sans text-xl md:text-2xl text-gray-700">
       
-      {/* Navigation Links */}
-      <div className="hidden md:flex space-x-8">
+      {/* Logo */}
+      <div className="flex items-center">
+        <div className="h-20 w-20 md:h-20 md:w-20">
+          <img
+            src="/GDG23_IG_Sticker_01_v01.gif"
+            alt="GDG Sticker Brackets"
+            className="h-full w-full object-contain"
+          />
+        </div>
+      </div>
+
+      {/* Centered Desktop Links */}
+      <div className="hidden md:flex space-x-8 absolute left-1/2 transform -translate-x-1/2">
         <NavLink href="/" active>Home</NavLink>
         <NavLink href="/about">About Us</NavLink>
         <NavLink href="/events">Events</NavLink>
-        <NavLink href="/departments">Departments</NavLink>
         <NavLink href="/team">Team</NavLink>
-      </div>
-      
-      {/* Contact and Google Logo */}
-      <div className="flex items-center space-x-4">
         <NavLink href="/contact">Contact Us</NavLink>
-        {/* <div>
-          <div className="w-6 h-6 relative">
-            <div className="absolute top-0 left-0 w-3 h-3 bg-blue-500 rounded-tl-full"></div>
-            <div className="absolute top-0 right-0 w-3 h-3 bg-red-500 rounded-tr-full"></div>
-            <div className="absolute bottom-0 left-0 w-3 h-3 bg-green-500 rounded-bl-full"></div>
-            <div className="absolute bottom-0 right-0 w-3 h-3 bg-yellow-500 rounded-br-full"></div>
-          </div>
-        </div> */}
       </div>
+
+      {/* Mobile Menu Button (right side) */}
+      <div className="md:hidden ml-auto">
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="text-gray-700 text-3xl focus:outline-none"
+        >
+          ☰
+        </button>
+      </div>
+
+      {/* Mobile Dropdown */}
+      {isOpen && (
+        <div className="absolute top-full left-0 w-full bg-white shadow-md flex flex-col items-start p-4 space-y-4 md:hidden">
+          <NavLink href="/" active>Home</NavLink>
+          <NavLink href="/about">About Us</NavLink>
+          <NavLink href="/events">Events</NavLink>
+          <NavLink href="/team">Team</NavLink>
+          <NavLink href="/contact">Contact Us</NavLink>
+        </div>
+      )}
     </nav>
   );
 };
@@ -59,8 +63,8 @@ const NavLink = ({ href, children, active }: NavLinkProps) => {
     <Link
       to={href}
       className={cn(
-        "text-gray-600 hover:text-blue-500 transition-colors font-medium",
-        active && "text-blue-500"
+        "text-gray-600 hover:text-gray-900 transition-colors font-sans text-lg md:text-xl",
+        active && "text-gray-900"
       )}
     >
       {children}

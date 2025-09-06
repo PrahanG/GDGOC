@@ -1,13 +1,9 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import EventsSection from "@/components/EventsSection";
-import SnowfallEffect from "@/components/ui/SnowfallEffect"; // Ensure the path is correct
-
 const Index = () => {
   return (
     <div className="min-h-screen bg-gray-50 relative overflow-hidden">
-      {/* <SnowfallEffect /> */}
-
       <Navbar />
       <main className="pt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
