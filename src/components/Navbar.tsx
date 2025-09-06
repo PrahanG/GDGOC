@@ -10,10 +10,10 @@ const Navbar = () => {
       
       {/* Logo */}
       <div className="flex items-center">
-<div className="h-10 w-100 md:h-20 md:w-80">
+<div className="h-100 w-100 md:h-20 md:w-80">
   <img
-    src="public/logo.jpg"
-    alt="GDG Sticker Brackets"
+    src="/logo.jpg"
+    alt=""
     className="h-full w-60 object-contain"  
   />
 </div>
