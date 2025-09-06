@@ -127,12 +127,6 @@ const Hero = () => {
             >
               Join Community
             </a>
-            <Link
-              to="/learn-more"
-              className="px-6 py-3 bg-white text-blue-500 border border-blue-500 rounded-full hover:bg-blue-50 transition-colors duration-300 text-center"
-            >
-              Learn More
-            </Link>
           </div>
         </div>
       </div>
